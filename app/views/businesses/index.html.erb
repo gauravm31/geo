@@ -1,0 +1,23 @@
+<h1>Listing businesses</h1>
+
+<h3>Search by Distance From Vinsol</h3>
+
+<%= form_tag({ controller: 'businesses', action: 'index' }, { method: :get }) do %>
+  <%= number_field_tag :distance %>
+  <%= submit_tag :search %>
+<% end %>
+
+<table>
+  <tr>
+    <th>
+      Name
+    </th>
+  </tr>
+  <% @businesses.each do |business| %>
+    <tr>
+      <td>
+        <%= business.name %>
+      </td>
+    </tr>
+  <% end %>
+</table>

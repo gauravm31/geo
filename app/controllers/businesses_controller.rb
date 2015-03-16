@@ -1,7 +1,11 @@
 class BusinessesController < ApplicationController
 
   def index
-    @businesses = Business.all
+    if params[:distance]
+      @businesses = Business.search(params[:distance]).records
+    else
+      @businesses = Business.all
+    end
   end
 
 end

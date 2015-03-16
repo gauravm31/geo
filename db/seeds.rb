@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Business.create(name: 'Vinsol', lat: 77.64, lon: 28.16)
-Business.create(name: 'Haldiram', lat: 77.10, lon: 28.62)
-Business.create(name: 'Nathu', lat: 77.18, lon: 28.38)
-Business.create(name: 'Caventars', lat: 77.13, lon: 28.63)
+Business.create(name: 'Vinsol', lat: 28.644894, lon: 77.170619)
+Business.create(name: 'Hari Nagar', lat: 28.624846, lon: 77.1109022)
+Business.create(name: 'Rajendra Place', lat: 28.642464, lon: 77.178145)
+Business.create(name: 'Vasundhara', lat: 28.669607, lon: 77.383318)
