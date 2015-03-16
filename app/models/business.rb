@@ -1,7 +1,7 @@
 class Business < ActiveRecord::Base
   include Elasticsearch::Model
 
-  Vinsol_Location = { lat: 28.644894, lon: 77.170619 }
+  VinsolLocation = { lat: 28.644894, lon: 77.170619 }
 
   settings index: { number_of_shards: 1, number_of_replicas: 0 } do
     mapping do 
@@ -21,7 +21,7 @@ class Business < ActiveRecord::Base
         filter: {
           geo_distance: {
             distance: distance + 'km',
-            location: Vinsol_Location
+            location: VinsolLocation
           }
         }
       }
